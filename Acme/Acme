@@ -1,1 +1,6 @@
+apt install -y socat
+curl https://get.acme.sh | sh
+~/.acme.sh/acme.sh --register-account -m xxxx@xxxx.com
 
+80    : ~/.acme.sh/acme.sh  --issue -d mydomain.com   --standalone
+nginx : ~/.acme.sh/acme.sh --issue  -d mydomain.com   --nginx
